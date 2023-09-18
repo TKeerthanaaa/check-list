@@ -1,0 +1,78 @@
+@import url("https://fonts.googleapis.com/css2?family=Rock+Salt&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+}
+
+:root {
+  --clr-very-dark-blue: hsl(243, 87%, 12%);
+  --clr-desaturated-blue: hsl(238, 22%, 44%);
+  --clr-bright-blue: hsl(224, 93%, 58%);
+  --clr-moderate-cyan: hsl(170, 45%, 43%);
+  --clr-light-grayish-blue: hsl(240, 75%, 98%);
+  --clr-light-gray: hsl(0, 0%, 75%);
+  --transition: all 0.3s linear;
+  --spacing: 0.1rem;
+  --radius: 0.25rem;
+  --light-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  --dark-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+  --max-width: 1200px;
+  --fixed-width: 450px;
+}
+
+body {
+  font-family: "Rock Salt", cursive;
+  background-color: #00ff9e;
+}
+
+.text {
+  margin-left: 32rem;
+  margin-top: 3.2rem;
+  margin-bottom: 2rem;
+  color: #1e00ff;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  max-width: 350px;
+  margin: 50px auto;
+  background-color: #e1ff00;
+  border-radius: 5px;
+  border: 0.5px solid #333;
+  margin-top: 3rem;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #333;
+  height: 15vh;
+  gap: 2rem;
+}
+
+.box {
+  margin-left: 1rem;
+}
+
+.container .item input:checked + p {
+  background-color: #ff0061;
+  /* text-decoration: line-through; */
+}
+
+.container .item input:checked {
+  background-color: #ff0061;
+}
+
+.container .item p {
+  margin: 0;
+  padding: 20px;
+  transition: background 0.2s;
+  border-left: 1px solid #333;
+}
