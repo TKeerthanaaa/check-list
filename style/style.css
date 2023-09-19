@@ -63,7 +63,7 @@ body {
 
 .container .item input:checked + p {
   background-color: #ff0061;
-  /* text-decoration: line-through; */
+  text-decoration: line-through;
 }
 
 .container .item input:checked {
